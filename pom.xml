@@ -21,6 +21,7 @@
 		<module>spring-boot-tutorial-aop</module>
 		<module>spring-boot-tutorial-mybatis</module>
 		<module>spring-boot-tutorial-rabbitmq</module>
+		<module>spring-boot-tutorial-elasticsearch</module>
 	</modules>
 
 	<properties>

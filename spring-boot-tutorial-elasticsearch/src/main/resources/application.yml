@@ -1,0 +1,4 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: 140.143.142.190:9300

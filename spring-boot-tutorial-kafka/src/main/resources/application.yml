@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: 140.143.142.190:9092
+    consumer:
+      bootstrap-servers: 140.143.142.190:9092
+      group-id: foo
+      auto-offset-reset: earliest
+

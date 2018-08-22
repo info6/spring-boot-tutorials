@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    addresses: 140.143.142.190
+    username: guest
+    password: guest
+    port: 5672
+  output:
+    ansi:
+      enabled: always
+

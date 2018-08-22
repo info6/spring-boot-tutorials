@@ -13,6 +13,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
+import java.util.Optional;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
@@ -77,6 +78,20 @@ public class UserTest {
 		List<User> userList = userPage.getContent();
 
 		userList.forEach(System.out::println);
+
+	}
+
+	@Test
+	public void updateUser() {
+
+		Optional<User> userOptional = userRepository.findById(1L);
+		if (userOptional.isPresent()) {
+			System.out.println(userOptional.get());
+			User user = userOptional.get();
+			user.setUserName("新名字");
+			userRepository.save(user);
+			System.out.println(user);
+		}
 
 	}
 }
